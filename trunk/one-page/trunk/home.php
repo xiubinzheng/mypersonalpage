@@ -4,7 +4,7 @@
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query. 
+ * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
@@ -50,18 +50,20 @@
 <!-- ***********************Featured Text Area Block************************* -->
 <div class="featured_text_area default_bg">
 
-    <div class="bbc">
-        <?php if (onepage_get_option('onepage_page_main_heading') != '') { ?>
-            <h1 id="fta_top"><?php echo stripslashes(onepage_get_option('onepage_page_main_heading')); ?></h1>
-        <?php } else { ?>
-            <h2 id="fta_top"><?php _e('About Me', 'onepage'); ?></h2>
-        <?php } ?>
-        <?php if (onepage_get_option('onepage_page_sub_heading') != '') { ?>
-            <p id="fta_bottom"><?php echo stripslashes(onepage_get_option('onepage_page_sub_heading')); ?></p>
-        <?php } else { ?>
-            <p id="fta_bottom"><?php _e('Jughgfhgfhgf', 'onepage'); ?></p>
-        <?php } ?>
-    </div>
+      <!-- the php code is still visible <div class="bbc">
+            <?php if (onepage_get_option('onepage_page_main_heading') != '') { ?>
+                <h1 id="fta_top"><?php echo stripslashes(onepage_get_option('onepage_page_main_heading')); ?></h1>
+            <?php } else { ?>
+                <h2 id="fta_top"><?php _e('About Me', 'onepage'); ?></h2>
+            <?php } ?>
+            <?php if (onepage_get_option('onepage_page_sub_heading') != '') { ?>
+                <p id="fta_bottom"><?php echo stripslashes(onepage_get_option('onepage_page_sub_heading')); ?></p>
+            <?php } else { ?>
+                <p id="fta_bottom"><?php _e('Jughgfhgfhgf', 'onepage'); ?></p>
+            <?php } ?>
+        </div> -->kjks
+
+        <div class="bbc">
 </div>
 <div class="clear"></div>
 <!-- ***********************Our Services block************************* -->
@@ -118,79 +120,7 @@
                                 <?php } ?>
                             </div>
                     </li>
-                    <!-- box2 -->
-                    <li id="services_box_container2">
 
-                        <?php if (onepage_get_option('onepage_our_services_image2') != '') { ?>
-                            <div class="ch-item ch-img-2" style="background: url(<?php echo onepage_get_option('onepage_our_services_image2'); ?>);">
-                            <?php } else { ?>
-                                <div class="ch-item ch-img-2" style="background: url(<?php echo get_template_directory_uri(); ?>/images/circle_img2.jpg);">
-                                <?php } ?>
-                                <div class="ch-info-wrap">
-                                    <div class="ch-info">
-                                        <div class="ch-info-front ch-img-2">
-                                            <?php if (onepage_get_option('onepage_our_services_image2') != '') { ?>
-                                                <img src="<?php echo onepage_get_option('onepage_our_services_image2'); ?>" />
-                                            <?php } else { ?>
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/circle_img2.jpg" />
-                                            <?php } ?>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="rect_box">
-                                <?php if (onepage_get_option('onepage_our_services_title2') != '') { ?>
-                                    <p class="services_box_rect_head"><a <?php if (onepage_get_option('onepage_services_title_link2') != '') { ?>href="<?php echo stripslashes(onepage_get_option('onepage_services_title_link2')); ?><?php } else { ?><?php } ?>" target="_blank"><?php echo stripslashes(onepage_get_option('onepage_our_services_title2')); ?></a></p>
-                                <?php } else { ?>
-                                    <p class="services_box_rect_head"><a href="<?php ?>"><?php _e('Single Click Installation', 'onepage'); ?></a></p>
-                                <?php } ?>
-                                <?php if (onepage_get_option('onepage_our_services_desc2') != '') { ?>
-                                    <p class="services_box_rect_para"><?php echo stripslashes(onepage_get_option('onepage_our_services_desc2')); ?></p>
-                                <?php } else { ?>
-
-                                    <p class="services_box_rect_para"><?php _e('Just a Click and your website is ready for use. Your Site is faster to built, easy to use & Search Engine Optimized.', 'onepage'); ?></p>
-                                <?php } ?>
-                            </div>
-                    </li>
-                    <!-- box3 -->
-                   <!--  <li id="services_box_container3">
-
-                        <?php if (onepage_get_option('onepage_our_services_image3') != '') { ?>
-                            <div class="ch-item ch-img-2" style="background: url(<?php echo onepage_get_option('onepage_our_services_image3'); ?>);">
-                            <?php } else { ?>
-                                <div class="ch-item ch-img-3" style="background: url(<?php echo get_template_directory_uri(); ?>/images/circle_img3.jpg);">
-                                <?php } ?>
-                                <div class="ch-info-wrap">
-                                    <div class="ch-info">
-                                        <div class="ch-info-front ch-img-3">
-                                            <?php if (onepage_get_option('onepage_our_services_image3') != '') { ?>
-                                                <img src="<?php echo onepage_get_option('onepage_our_services_image3'); ?>" />
-                                            <?php } else { ?>
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/circle_img3.jpg" />
-                                            <?php } ?>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="rect_box">
-                                <?php if (onepage_get_option('onepage_our_services_title3') != '') { ?>
-                                    <p class="services_box_rect_head"><a <?php if (onepage_get_option('onepage_services_title_link3') != '') { ?>href="<?php echo stripslashes(onepage_get_option('onepage_services_title_link3')); ?><?php } else { ?><?php } ?>" target="_blank"><?php echo stripslashes(onepage_get_option('onepage_our_services_title3')); ?></a></p>
-                                <?php } else { ?>
-                                    <p class="services_box_rect_head"><a href="<?php echo esc_url($site_url);?>"><?php _e('Single Click Installation','onepage');?></a></p>
-                                <?php } ?>
-                                <?php if (onepage_get_option('onepage_our_services_desc3') != '') { ?>
-                                    <p class="services_box_rect_para"><?php echo stripslashes(onepage_get_option('onepage_our_services_desc3')); ?></p>
-                                <?php } else { ?>
-
-                                    <p class="services_box_rect_para"><?php _e('Just a Click and your website is ready for use. Your Site is faster to built, easy to use & Search Engine Optimized.', 'onepage'); ?></p>
-                                <?php } ?>
-                            </div>
-                    </li> -->
-                    <!-- box4 -->
                     <!-- <li id="services_box_container4">
 
 
@@ -254,7 +184,7 @@
 
         <div class="container_24"><div class="grid_24">
                 <!-- Start the Loop. -->
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>  
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <?php
                         static $count = 0;
                         if ($count == "6") {
@@ -404,4 +334,4 @@
         <!-- ***********************Contact Page Ends************************* -->
         <?php
         get_footer();
-        ?> 
+        ?>
