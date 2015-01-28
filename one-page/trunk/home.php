@@ -90,7 +90,7 @@
                         <?php if (onepage_get_option('onepage_our_services_image1') != '') { ?>
                             <div class="ch-item ch-img-1" style="background: url(<?php echo onepage_get_option('onepage_our_services_image1'); ?>);">
                             <?php } else { ?>
-                                <div class="ch-item ch-img-1" style="background: url(<?php echo get_template_directory_uri(); ?>/images/circle_img1.jpg);">
+                                <div class="ch-item ch-img-1" style="background: url(<?php echo get_template_directory_uri(); ?>/images/me_img.jpg);">
                                 <?php } ?>
                                 <div class="ch-info-wrap">
                                     <div class="ch-info">
@@ -98,7 +98,7 @@
                                             <?php if (onepage_get_option('onepage_our_services_image1') != '') { ?>
                                                 <img src="<?php echo onepage_get_option('onepage_our_services_image1'); ?>" />
                                             <?php } else { ?>
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/circle_img1.jpg" />
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/me_img.jpg" />
                                             <?php } ?>
                                         </div>
 
@@ -110,56 +110,20 @@
                                 <?php if (onepage_get_option('onepage_our_services_title1') != '') { ?>
                                     <p class="services_box_rect_head"><a <?php if (onepage_get_option('onepage_services_title_link1') != '') { ?>href="<?php echo stripslashes(onepage_get_option('onepage_services_title_link1')); ?><?php } else { ?><?php } ?>" target="_blank"><?php echo stripslashes(onepage_get_option('onepage_our_services_title1')); ?></a></p>
                                 <?php } else { ?>
-                                    <p class="services_box_rect_head"><a href="<?php echo esc_url($site_url);?>"><?php _e('Single Click Installation','onepage');?></a></p>
+                                    <p class="services_box_rect_head"><a href="<?php echo esc_url($site_url);?>"><?php _e('About Me','onepage');?></a></p>
                                 <?php } ?>
                                 <?php if (onepage_get_option('onepage_our_services_desc1') != '') { ?>
                                     <p class="services_box_rect_para"><?php echo stripslashes(onepage_get_option('onepage_our_services_desc1')); ?></p>
                                 <?php } else { ?>
 
-                                    <p class="services_box_rect_para"><?php _e('Just a Click and your website is ready for use. Your Site is faster to built, easy to use & Search Engine Optimized.', 'onepage'); ?></p>
+                                    <p class="services_box_rect_para"><?php _e('Since 2011, I have been involved in hundreds of web development projects.', 'onepage'); ?></p>
                                 <?php } ?>
                             </div>
                     </li>
 
-                    <!-- <li id="services_box_container4">
 
-
-                        <?php if (onepage_get_option('onepage_our_services_image4') != '') { ?>
-                            <div class="ch-item ch-img-4" style="background: url(<?php echo onepage_get_option('onepage_our_services_image4'); ?>);">
-                            <?php } else { ?>
-                                <div class="ch-item ch-img-4" style="background: url(<?php echo get_template_directory_uri(); ?>/images/circle_img4.jpg);">
-                                <?php } ?>
-                                <div class="ch-info-wrap">
-                                    <div class="ch-info">
-                                        <div class="ch-info-front ch-img-4">
-                                            <?php if (onepage_get_option('onepage_our_services_image4') != '') { ?>
-                                                <img src="<?php echo onepage_get_option('onepage_our_services_image4'); ?>" />
-                                            <?php } else { ?>
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/circle_img4.jpg" />
-                                            <?php } ?>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="rect_box">
-                                <?php if (onepage_get_option('onepage_our_services_title4') != '') { ?>
-                                    <p class="services_box_rect_head"><a <?php if (onepage_get_option('onepage_services_title_link4') != '') { ?>href="<?php echo stripslashes(onepage_get_option('onepage_services_title_link4')); ?><?php } else { ?><?php } ?>" target="_blank"><?php echo stripslashes(onepage_get_option('onepage_our_services_title4')); ?></a></p>
-                                <?php } else { ?>
-                                    <p class="services_box_rect_head"><a href="<?php echo esc_url($site_url);?>"><?php _e('Single Click Installation', 'onepage'); ?></a></p>
-                                <?php } ?>
-                                <?php if (onepage_get_option('onepage_our_services_desc4') != '') { ?>
-                                    <p class="services_box_rect_para"><?php echo stripslashes(onepage_get_option('onepage_our_services_desc4')); ?></p>
-                                <?php } else { ?>
-
-                                    <p class="services_box_rect_para"><?php _e('Just a Click and your website is ready for use. Your Site is faster to built, easy to use & Search Engine Optimized.', 'onepage'); ?></p>
-                                <?php } ?>
-                            </div>
-                    </li>
                 </ul>
-            </div> -->
-            <!-- box4 ends -->
+            </div>
         </div>
 
         <div class="clear"></div>

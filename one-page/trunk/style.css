@@ -1005,9 +1005,9 @@ p.services_box_rect_para{
 .rect_box {
     overflow: hidden;
     margin-top: -130px;
-    background: #085262;
+    background: #FFFFFF;
     width: 265px;
-    border-bottom:6px solid #0dabce;
+    border:2px solid #000000;
 }
 
 .rect_box p, .rect_box p a{
