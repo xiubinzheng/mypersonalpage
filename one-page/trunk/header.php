@@ -16,30 +16,14 @@
     </head>
     <body <?php body_class(); ?>>
         <!-- ******************top Social icon wrapper********* -->
-        <div class="social_wrapper">
-            <div class="container_24">
-                <div class="grid_24">				
-                    <div id="call_us">
-                        <div><img src="<?php echo get_template_directory_uri(); ?>/images/phone_icon.png"></div><div>
-                            <?php if (onepage_get_option('onepage_contact_number') != '') { ?>
-                                <p><?php _e('Call us on&nbsp;&nbsp;','onepage'); ?><?php echo onepage_get_option('onepage_contact_number'); ?></p>
-                            <?php } else { ?>
-                                <p><?php _e('Call us on 2514578498','onepage'); ?></p>
-<?php } ?>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
         <!-- *********************Header Logo and menu Wrapper************************************** -->
 
 
         <!-- Header condition1 starts here -->
 
         <div class="clear"></div>
-        <!-- Header condition2 starts here -->	
+        <!-- Header condition2 starts here -->
 
         <div class="header_wrapper">
             <div class="container_24">
@@ -58,6 +42,11 @@
                     </div>
                 </div>
                 <div class="clear"></div>
+            </div>
+            <div class="social_wrapper">
+                <div class="container_24">
+                <h3 class="header_title">Professional Web Developer in Greater Philadelphia Region<h3>
+                </div>
             </div>
         </div>
 
