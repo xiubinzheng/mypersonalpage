@@ -2,6 +2,23 @@
 <project version="4">
   <component name="ProjectRootManager" version="2" />
   <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://mypersonalpage.googlecode.com/svn/trunk/one-page/branches" />
+                  <option value="https://mypersonalpage.googlecode.com/svn/trunk/one-page/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://mypersonalpage.googlecode.com/svn/trunk/one-page/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
 </project>
